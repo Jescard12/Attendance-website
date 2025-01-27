@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login Form</title>
+    <link rel="stylesheet" href="signIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+    
+    <div class="form-container login">
+        <form class="form-log" action="signinStudent.php" method="POST">
+            <h1>Login</h1>
+            <span>Use your email & password</span>
+            <div style="width: 100%; display: flex;" class="icon-i">
+                <input type="hidden" name="role" value="admission">
+                <input type="email" placeholder="Your Email" name="email" required>
+                <a class="ii"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div style="width: 100%; display: flex;" class="icon-i">
+                <input type="password" id="login-pass" placeholder="Your Password" name="password" required>
+                <button class="ii" type="button" id="login-eye"><i class="fa-solid fa-eye-slash"></i></button>
+            </div>
+            <button class="bttn" type="submit">Login</button>
+        </form>
+        
+    </div>
+    <div class="toogle-container">
+        <div class="toogle">
+            <div class="toogle-panel toogle-right">
+                <h1>Hello Student!</h1>
+                <p>Log in with your personal details to use all of site features</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

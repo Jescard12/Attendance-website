@@ -1,0 +1,65 @@
+:root {
+    --hex-blue: #0065a5;
+    --hex-lightblue: #B0D8E9;
+    --hex-white: #ffffff;
+    --hex-black: #000000;
+}
+
+/* Logo Styling */
+.ndulogo {
+    margin-left: 10px;
+}
+
+/* Header Styling */
+header {
+    padding: 1rem 0;
+}
+
+/* Welcome Message */
+.wlc-msg {
+    color: var(--hex-blue);
+    font-weight: bold;
+}
+
+/* Button Styling */
+.all-btns {
+    background-color: var(--hex-blue);
+    color: var(--hex-white);
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.all-btns:hover {
+    background-color: var(--hex-white);
+    color: var(--hex-blue);
+    transform: scale(1.05);
+    border: 2px solid var(--hex-lightblue);
+}
+
+.Choose-Course{
+    background-color: var(--hex-blue);
+}
+/*Excuse styling*/
+.excuse-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.excuse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.excuses-section h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 576px) {
+    .all-btns {
+        font-size: 1.2rem;
+    }
+}
